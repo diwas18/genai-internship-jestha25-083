@@ -1,0 +1,11 @@
+{
+    "intern_name": "Diwas",
+    "week": 1,
+    "topics_covered": [
+        "String Methods",
+        "File I/O",
+        "Error Handling",
+        "JSON"
+    ],
+    "status": "Completed"
+}
