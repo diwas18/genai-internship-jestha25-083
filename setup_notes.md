@@ -39,3 +39,28 @@
 - Created `week2/day1_llm_intro.py` using `genai.Client` and `gemini-2.5-flash`.
 - Managed rate limits (`429`) with `time.sleep()` delay.
 - Successfully generated first LLM completion in terminal and pushed to GitHub.
+
+### Day 2: Model Configuration & Prompting
+- Explored parameter tuning including `temperature`, `max_output_tokens`, and `system_instruction`.
+- Built `week2/day2_config.py` using `types.GenerateContentConfig` to control output randomness and constraints.
+- Learned how system prompts dictate persona and behavior for LLM responses.
+
+### Day 3: Text Preprocessing & Chunking
+- Implemented text cleaning routines for raw document data.
+- Created word-level sliding-window chunking (`chunk_size=35`, `overlap=10`) in `week2/day3_chunking.py`.
+- Preserved semantic context across chunk boundaries for downstream RAG use.
+
+### Day 4: Vector Embeddings & Semantic Search
+- Converted document text chunks into high-dimensional vector representations using Gemini embedding models.
+- Implemented a custom mathematical `cosine_similarity()` function in `week2/day4_vector_embeddings.py`.
+- Added model fallback handling and verified semantic ranking against user queries.
+
+### Day 5: Mini-RAG System Implementation
+- Integrated chunking, vector embeddings, cosine search, and Gemini generation into `week2/day5_mini_rag.py`.
+- Built an end-to-end `MiniRAG` pipeline featuring document indexing, top-K retrieval, and prompt augmentation.
+- Configured strict system instructions (`temperature=0.1`) to generate grounded, non-hallucinated answers from context.
+
+### Day 6: Code Refactoring & Repository Documentation
+- Refactored `week2/` codebase to standardize error handling and model fallback sequences across modules.
+- Updated main `README.md` with detailed Week 2 architecture breakdowns and module summaries.
+- Verified all committed scripts pass standalone execution tests and pushed clean commits to GitHub.
