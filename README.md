@@ -27,8 +27,8 @@ Each folder contains that week's code, notes, and deliverable.
 
 | Week | Topic | Status |
 |------|-------|--------|
-| 1 | Python and Environment Setup | In Progress |
-| 2 | Introduction to LLMs | Not Started |
+| 1 | Python and Environment Setup | Completed |
+| 2 | Introduction to LLMs | Completed |
 | 3 | Working with LLM APIs | Not Started |
 | 4 | Prompt Engineering + Mini Project | Not Started |
 | 5 | Embeddings and Semantic Search | Not Started |
