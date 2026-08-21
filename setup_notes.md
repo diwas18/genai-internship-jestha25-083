@@ -64,3 +64,27 @@
 - Refactored `week2/` codebase to standardize error handling and model fallback sequences across modules.
 - Updated main `README.md` with detailed Week 2 architecture breakdowns and module summaries.
 - Verified all committed scripts pass standalone execution tests and pushed clean commits to GitHub.
+
+
+
+# Week 3 - Setup Notes
+
+### Day 1: Streaming Response Delivery
+- Built `week3/day1_streaming.py` using `client.models.generate_content_stream()` to deliver real-time, chunk-by-chunk token responses in the terminal.
+
+### Day 2: System Prompts & Persona Control
+- Created `week3/day2_system_instruction.py` using `types.GenerateContentConfig(system_instruction=...)` to enforce assistant tone and behavioral rules.
+
+### Day 3: Multi-Turn Conversation History
+- Implemented stateful context management in `week3/day3_chat_history.py` using `client.chats.create()`.
+- Added an interactive `history` command to inspect active memory logs in real time.
+
+### Day 4: Generation Parameters & Output Constraints
+- Built `week3/day4_parameters.py` to fine-tune response creativity, focus, and token limits using `temperature`, `top_p`, `top_k`, and `max_output_tokens`.
+
+### Day 5: Error Handling & API Resilience
+- Added robust exception handling in `week3/day5_error_handling.py` using `google.genai.errors.APIError` and `KeyboardInterrupt` to cleanly manage API failures, quota limits, and user interrupts.
+
+### Day 6: Final CLI Integration & Refactoring
+- Consolidated all Week 3 features into a single, production-ready terminal chatbot script `week3/day6_chatbot_final.py`.
+- Conducted edge-case testing and updated project setup documentation.
