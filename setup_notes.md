@@ -1,90 +1,125 @@
 # Week 1 - Setup Notes
-# Day 1
 
-- Python and VS Code were already installed
-- Created and activated a virtual environment (venv)
-- Cloned the repo locally and set up the week1 folder
-- Wrote basic Python examples using lists and dictionaries in basics.py
-- Ran basics.py successfully with no errors
+### Day 1
+- Set up venv, cloned repo, wrote basic list/dict examples in `basics.py`.
 
+### Day 2
+- Fixed Git author config. Practiced loops, conditionals, and functions (`loops_conditionals.py`, `functions.py`).
 
-# Day 2 
+### Day 3
+- Practiced string methods, file I/O, JSON parsing, and `try-except` error handling.
 
-- Aim: Learning Python functions, control loops, and dictionary collections
-- Resolved Git author configuration to properly attribute commits to `diwas18`
-- Created `loops_conditionals.py` to practice `if-elif-else` branches, `for` loops, and `while` loops
-- Created `functions.py` featuring modular functions (`greet_user`, `calculate_grade`, `summarize_scores`) using dictionary returns and list operations
-- Verified output in the local virtual environment and pushed changes to GitHub
-
-# Day 3
-
-- Aim: Practicing core Python basics: string methods, file I/O, error handling, and JSON
-- Practiced string manipulation (`strip()`, `lower()`) and text file I/O (`open()`, `read()`, `write()`)
-- Applied JSON parsing (`json.dump()`, `json.load()`) to serialize and deserialize structured data
-- Implemented robust error handling using `try-except` blocks for missing files (`FileNotFoundError`) and invalid JSON (`JSONDecodeError`)
-- Verified all scripts locally and pushed changes to GitHub
-
-
-### Day 4: API Requests & Data Processing
-- Installed `requests` package to fetch external REST API data.
-- Parsed user records and saved output to `week1/api_response.json`.
-
+### Day 4
+- Used `requests` to fetch a REST API and saved output to `api_response.json`.
 
 
 # Week 2 - Setup Notes
 
-### Day 1: Gemini API & Security
-- Installed `python-dotenv` and `google-genai`.
-- Secured API key in `.env` and updated `.gitignore` to prevent leaks.
-- Created `week2/day1_llm_intro.py` using `genai.Client` and `gemini-2.5-flash`.
-- Managed rate limits (`429`) with `time.sleep()` delay.
-- Successfully generated first LLM completion in terminal and pushed to GitHub.
+### Day 1
+- Set up `.env` + `.gitignore`, installed `google-genai`, ran first Gemini call (`gemini-2.5-flash`).
 
-### Day 2: Model Configuration & Prompting
-- Explored parameter tuning including `temperature`, `max_output_tokens`, and `system_instruction`.
-- Built `week2/day2_config.py` using `types.GenerateContentConfig` to control output randomness and constraints.
-- Learned how system prompts dictate persona and behavior for LLM responses.
+### Day 2
+- Explored `temperature`, `max_output_tokens`, and `system_instruction` via `types.GenerateContentConfig`.
 
-### Day 3: Text Preprocessing & Chunking
-- Implemented text cleaning routines for raw document data.
-- Created word-level sliding-window chunking (`chunk_size=35`, `overlap=10`) in `week2/day3_chunking.py`.
-- Preserved semantic context across chunk boundaries for downstream RAG use.
+### Day 3
+- Built word-level sliding-window chunking (`chunk_size=35`, `overlap=10`).
 
-### Day 4: Vector Embeddings & Semantic Search
-- Converted document text chunks into high-dimensional vector representations using Gemini embedding models.
-- Implemented a custom mathematical `cosine_similarity()` function in `week2/day4_vector_embeddings.py`.
-- Added model fallback handling and verified semantic ranking against user queries.
+### Day 4
+- Generated embeddings and implemented cosine similarity from scratch for semantic ranking.
 
-### Day 5: Mini-RAG System Implementation
-- Integrated chunking, vector embeddings, cosine search, and Gemini generation into `week2/day5_mini_rag.py`.
-- Built an end-to-end `MiniRAG` pipeline featuring document indexing, top-K retrieval, and prompt augmentation.
-- Configured strict system instructions (`temperature=0.1`) to generate grounded, non-hallucinated answers from context.
+### Day 5
+- Built `MiniRAG`: chunking + embeddings + retrieval + generation in one pipeline.
 
-### Day 6: Code Refactoring & Repository Documentation
-- Refactored `week2/` codebase to standardize error handling and model fallback sequences across modules.
-- Updated main `README.md` with detailed Week 2 architecture breakdowns and module summaries.
-- Verified all committed scripts pass standalone execution tests and pushed clean commits to GitHub.
-
+### Day 6
+- Refactored Week 2 code, standardized error handling, updated README.
 
 
 # Week 3 - Setup Notes
 
-### Day 1: Streaming Response Delivery
-- Built `week3/day1_streaming.py` using `client.models.generate_content_stream()` to deliver real-time, chunk-by-chunk token responses in the terminal.
+### Day 1
+- Built streaming responses with `generate_content_stream()`.
 
-### Day 2: System Prompts & Persona Control
-- Created `week3/day2_system_instruction.py` using `types.GenerateContentConfig(system_instruction=...)` to enforce assistant tone and behavioral rules.
+### Day 2
+- Added system prompts for persona/behavior control.
 
-### Day 3: Multi-Turn Conversation History
-- Implemented stateful context management in `week3/day3_chat_history.py` using `client.chats.create()`.
-- Added an interactive `history` command to inspect active memory logs in real time.
+### Day 3
+- Built multi-turn chat with `client.chats.create()` and a `history` command.
 
-### Day 4: Generation Parameters & Output Constraints
-- Built `week3/day4_parameters.py` to fine-tune response creativity, focus, and token limits using `temperature`, `top_p`, `top_k`, and `max_output_tokens`.
+### Day 4
+- Tuned `temperature`, `top_p`, `top_k`, `max_output_tokens`.
 
-### Day 5: Error Handling & API Resilience
-- Added robust exception handling in `week3/day5_error_handling.py` using `google.genai.errors.APIError` and `KeyboardInterrupt` to cleanly manage API failures, quota limits, and user interrupts.
+### Day 5
+- Added error handling for API failures, quota limits, and interrupts.
 
-### Day 6: Final CLI Integration & Refactoring
-- Consolidated all Week 3 features into a single, production-ready terminal chatbot script `week3/day6_chatbot_final.py`.
-- Conducted edge-case testing and updated project setup documentation.
+### Day 6
+- Combined everything into one final CLI chatbot script.
+
+
+# Week 4 - Setup Notes
+
+### Day 1-3
+- Practiced zero-shot, few-shot, and chain-of-thought prompting; validated structured JSON output.
+
+### Day 4
+- Mini project: a text tool for summarizing/extracting info using the Gemini API.
+
+
+# Week 5 - Setup Notes
+
+### Day 1
+- Built semantic search using `gemini-embedding-001` and manual cosine similarity.
+- Fixed model-name issues (Vertex AI names don't work on the Gemini API).
+
+
+# Week 6 - Setup Notes
+
+### Day 1
+- Set up ChromaDB locally, ran first add/query test.
+
+### Day 2
+- Implemented fixed-size chunking with overlap, stored chunks with deterministic IDs.
+
+### Day 3
+- Swapped Chroma's default embedder for a custom Gemini-based one.
+
+### Day 4
+- Tested multiple queries and compared chunk sizes (300 vs 150 chars).
+
+### Day 5
+- Compared manual cosine-similarity approach vs ChromaDB — identical ranking, DB adds persistence.
+
+
+# Week 7 - Setup Notes
+
+### Day 1
+- Built the first working RAG loop: retrieve chunks, then generate an answer from them.
+
+### Day 2
+- Added citations and a strict refusal rule for insufficient context.
+
+### Day 3
+- Tested fully-answerable, partially-relevant, and unrelated questions — model refused correctly on all edge cases.
+
+### Day 4
+- Compared a strict prompt vs a weak one — weak prompt reliably caused hallucination (Lamport clocks, CAP theorem answered from training data, not context).
+
+### Day 5
+- Finalized the RAG script with a clean set of example Q&As as the deliverable.
+
+
+# Week 8 - Setup Notes
+
+### Day 1
+- Wrapped the RAG pipeline in a basic Streamlit UI.
+
+### Day 2
+- Added file upload + chunking so users can load their own documents.
+
+### Day 3
+- Added a relevance threshold and error handling for empty files/questions and API failures.
+
+### Day 4
+- Rebuilt as a proper chat UI with history, plus custom branding and color theme.
+
+### Day 5
+- Ran final tests across question types and wrote the app's README.
