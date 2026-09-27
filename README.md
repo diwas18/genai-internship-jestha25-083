@@ -29,12 +29,12 @@ Each folder contains that week's code, notes, and deliverable.
 |------|-------|--------|
 | 1 | Python and Environment Setup | Completed |
 | 2 | Introduction to LLMs | Completed |
-| 3 | Working with LLM APIs | Not Started |
-| 4 | Prompt Engineering + Mini Project | Not Started |
-| 5 | Embeddings and Semantic Search | Not Started |
-| 6 | Vector Databases | Not Started |
-| 7 | RAG Basics | Not Started |
-| 8 | Simple RAG Application | Not Started |
+| 3 | Working with LLM APIs | Completed |
+| 4 | Prompt Engineering + Mini Project | Completed |
+| 5 | Embeddings and Semantic Search | Completed |
+| 6 | Vector Databases | Completed |
+| 7 | RAG Basics | Completed |
+| 8 | Simple RAG Application | Completed |
 | 9 | AI Agents and Tool Use | Not Started |
 | 10 | Frameworks and Chatbot | Not Started |
 | 11 | Deployment Basics | Not Started |
