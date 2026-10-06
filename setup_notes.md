@@ -123,3 +123,23 @@
 
 ### Day 5
 - Ran final tests across question types and wrote the app's README.
+
+# Week 9 - Setup Notes
+
+### Day 1
+- Defined function calling tools with type annotations, parameter schemas, and descriptive docstrings.
+
+### Day 2
+- Implemented automatic function invocation and execution loops using Gemini tool bindings.
+
+### Day 3
+- Added edge-case handling for tool failures, empty database lookups, and numeric domain errors.
+
+### Day 4
+- Built multi-tool agent chaining where outputs from initial tool calls pass directly into subsequent tools.
+
+### Day 5
+- Developed a head-to-head synthesis benchmark comparing plain parametric prompting versus deterministic tool execution.
+
+### Day 6
+- Standardized model fallback logic across all scripts, refactored code for production readiness, and completed the repository README.
