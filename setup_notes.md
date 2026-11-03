@@ -143,3 +143,23 @@
 
 ### Day 6
 - Standardized model fallback logic across all scripts, refactored code for production readiness, and completed the repository README.
+
+# Week 10 - Setup Notes
+
+### Day 1
+- Enforced raw JSON mode using response_mime_type="application/json" with the google-genai SDK.
+
+### Day 2
+- Implemented strict Pydantic BaseModel contracts to dictate key structure, types, and nested object arrays.
+
+### Day 3
+- Added categorical Enum constraints and field boundaries (ge, le, min_length) for payload validation.
+
+### Day 4
+- Built an extraction pipeline to parse unstructured system logs directly into database-ready Pydantic objects.
+
+### Day 5
+- Benchmark analysis comparing free-form string JSON prompting against strict response_schema generation.
+
+### Day 6
+- Standardized model failover lists across all scripts, updated week10/README.md, and completed repository cleanup.
