@@ -163,3 +163,44 @@
 
 ### Day 6
 - Standardized model failover lists across all scripts, updated week10/README.md, and completed repository cleanup.
+
+# Week 11 - Setup Notes
+
+### Day 1
+- Prepared structured JSONL datasets following Gemini multi-turn role formatting (`user` and `model` fields).
+
+### Day 2
+- Implemented validation scripts to verify dataset schema integrity, token bounds, and JSON syntax.
+
+### Day 3
+- Formatted domain-specific training pairs for supervised fine-tuning (SFT) workflows.
+
+### Day 4
+- Submitted and monitored fine-tuning jobs using the Google GenAI SDK tuning services.
+
+### Day 5
+- Evaluated tuned model metrics and compared generation accuracy against the base `gemini-3.8-flash` model.
+
+### Day 6
+- Documented SFT dataset specifications, updated `week11/README.md`, and finalized fine-tuning artifacts.
+
+
+# Week 12 - Setup Notes
+
+### Day 1
+- Built the initial FastAPI application structure with input validation schemas and core extraction routes.
+
+### Day 2
+- Integrated `gemini-3.8-flash` with Pydantic response schemas for automatic structured extraction endpoints.
+
+### Day 3
+- Added production-grade logging middleware (`X-Process-Time` tracking) and global HTTP exception handlers.
+
+### Day 4
+- Built client integration scripts (`client_test.py`) with exponential backoff for handling transient `503` server load.
+
+### Day 5
+- Conducted end-to-end API pipeline testing and finalized the complete capstone architecture.
+
+### Day 6
+- Consolidated all 12-week deliverables, updated the root `README.md` master log, and pushed the complete capstone repository to GitHub.
