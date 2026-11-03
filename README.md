@@ -35,16 +35,16 @@ Each folder contains that week's code, notes, and deliverable.
 | 6 | Vector Databases | Completed |
 | 7 | RAG Basics | Completed |
 | 8 | Simple RAG Application | Completed |
-| 9 | AI Agents and Tool Use | Not Started |
-| 10 | Frameworks and Chatbot | Not Started |
-| 11 | Deployment Basics | Not Started |
-| 12 | Capstone Project | Not Started |
+| 9 | AI Agents and Tool Use | Completed |
+| 10 | Frameworks and Chatbot | Completed |
+| 11 | Deployment Basics | Completed |
+| 12 | Capstone Project | Completed |
 
 ## Setup
 
 ```bash
 # Clone the repo
-git clone https://github.com/diwas18/genai-internship-jestha25-083.git
+git clone [https://github.com/diwas18github/genai-internship-jestha25-083.git](https://github.com/diwas18github/genai-internship-jestha25-083.git)
 
 # Create virtual environment
 python -m venv venv
@@ -52,4 +52,3 @@ source venv/bin/activate   # on Windows: venv\Scripts\activate
 
 # Install dependencies (as needed per week)
 pip install -r requirements.txt
-```
